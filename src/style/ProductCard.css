@@ -1,0 +1,68 @@
+.AllProductMainDiv,.EngineeringProductMainDiv,.PharamProductMainDiv,.ArchitectureProductMainDiv{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.ProductCardDiv {
+    width: 20%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: #1d1d1d;
+    border: 3px solid antiquewhite;
+    border-radius: 1rem;
+}
+.ProductCardDiv img {
+    width: 65%;
+    height: 28vh;
+    object-fit: contain;
+}
+.ProductSellerDetail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.LoadingDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.Addtocart{
+    width: 50%;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid black;
+    color: #ffffff;
+    background-color: #6a0080;
+    border-radius: 1rem;
+}
+.LoadingDiv img{
+    width: 15%;
+}
+@media only  screen and (width<= 600px) {
+    .ProductCardDiv {
+        width: 76%;
+        min-height: 60vh;
+    }
+    .AllProductMainDiv,.EngineeringProductMainDiv,.PharamProductMainDiv,.ArchitectureProductMainDiv{
+        gap: 1.5rem;
+    }
+    .LoadingDiv img {
+        width: 67%;
+    }
+}

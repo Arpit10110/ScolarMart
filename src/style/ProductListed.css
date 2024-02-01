@@ -1,0 +1,27 @@
+.ProductSuccesContainer {
+    width: 100%;
+    height: 65vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ProductSuccesContainer img {
+    width: 24%;
+}
+.GoTohomePage{
+    padding: 0.5rem;
+    background-color: #1d1d1d;
+    color: white;
+    font-size: 1.1rem;
+    border: 2px solid red;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+@media only  screen and (width<=600px){
+    .ProductSuccesContainer img  {
+        width: 70%;
+    }
+}

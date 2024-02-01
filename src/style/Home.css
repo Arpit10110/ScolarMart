@@ -1,0 +1,222 @@
+.bannerimg {
+  width: 100%;
+  height: 80%;
+  background-size: contain;
+  vertical-align: top;
+  object-fit: fill;
+}
+.slider-container {
+  width: 100%;
+  height: 80%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.sliderIntro {
+  background-color: #27364c;
+  height: 83vh;
+  overflow: hidden;
+}
+.satifaction img {
+  width: 100%;
+}
+.welcome {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.welcome img {
+  width: 40%;
+}
+.cont {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+.content h3 {
+  font-size: 2rem;
+  width: 90%;
+}
+.content button {
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  border: 3px solid black;
+}
+.ProductSec {
+  margin-top: 2rem;
+  background-color: rgb(39, 55, 77);
+}
+.ImgProductSection img {
+  width: 100%;
+}
+.Engineer {
+  width: 35%;
+  display: flex;
+  border: 2px solid;
+  border-radius: 2rem;
+  gap: 1rem;
+  background-color: #cbcbcb;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+.ProductCont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.ProductCont h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.ProductCont h4 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.ProductCont button {
+  font-size: 1.3rem;
+  padding: 0.4rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  background-color: black;
+  color: white;
+}
+.ProductCatImg {
+  width: 40%;
+  height: 40vh;
+  object-fit: contain;
+}
+.ProductCati {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 2rem;
+  padding-bottom: 6rem;
+  background-color: rgb(39, 55, 77);
+  justify-content: center;
+}
+
+@media only screen and (width<= 600px) {
+  .bannerimg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    vertical-align: top;
+    object-fit: fill;
+  }
+  .sliderIntro {
+    background-color: #27364c;
+    height: auto;
+    overflow: hidden;
+  }
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .welcome img {
+    width: 94%;
+  }
+  .cont {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .head {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    align-items: center;
+    gap: 1rem;
+  }
+  .content button {
+    font-size: 1rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+  }
+  .content h3 {
+    font-size: 1rem;
+    width: 90%;
+    text-align: center;
+  }
+  .ProductCati {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+  }
+  .Engineer {
+    width: 100%;
+    display: flex;
+    border: 2px solid;
+    border-radius: 2rem;
+    gap: 1rem;
+    background-color: #cbcbcb;
+    color: black;
+    padding: 0rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .ProductCont {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .ProductCont h3 {
+    font-size: 1.7rem;
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+  }
+  .ProductCont h4 {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  .ProductCont button {
+    font-size: 1rem;
+    padding: 0.4rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+  }
+}

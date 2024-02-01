@@ -1,0 +1,20 @@
+.productnavBtn {
+    color: white;
+    border: 2px solid black;
+    padding: 0.5rem;
+    background-color: #710ecc;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+.Productnav{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+@media only screen and (width<=600px){
+   .Productnav{
+    gap: 2rem;
+   }
+}

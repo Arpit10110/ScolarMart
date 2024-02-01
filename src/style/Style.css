@@ -1,0 +1,12 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    max-width: 100%;
+    min-height: 100%;
+    background-color: rgb(48,65,89);
+    color: white;
+}

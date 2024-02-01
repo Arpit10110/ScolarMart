@@ -1,0 +1,85 @@
+.SellerWrapDiv{
+   margin-bottom: 5rem;
+}
+.SellerHead h4{
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+.conatiner{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 2rem;
+}
+.conatiner h4{
+    font-size: 1.5rem;
+}
+.BoxDetail{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+.BoxDetail span{
+    font-size: 1.1rem;
+    width: 100%;
+}
+.ProductDis{
+    width: 96%;
+    height: 10vh;
+    margin-top: 0.4rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    border: 2px solid black;
+}
+.Detailinput{
+    font-size: 1rem;
+    width: 70%;
+    padding: 0.1rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    border: 2px solid black;
+}
+.PlaceProduct {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    background-color: black;
+    border-radius: 1rem;
+    border: 3px solid #4718fb;
+    color: white;
+    cursor: pointer;
+}
+@media only screen and (width<= 600px) {
+    .conatiner {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        width: 87%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 2rem;
+    }
+    .BoxDetail span {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .Detailinput{
+        width: 65%;
+    }
+}
