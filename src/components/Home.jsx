@@ -13,6 +13,7 @@ import Architecture from "../assets/Architecture.png"
 import ProductSectionImg from "../assets/ProductSectionImg.png"
 import {Carousel} from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Link } from 'react-router-dom'
 const Home = () => {
   useEffect(() => {
     document.title="ScolarMart | Home"
@@ -52,7 +53,7 @@ const Home = () => {
           <div className="ProductCont">
             <h3>Engineering</h3>
             <h4>Buy or sell engineering related educational product whether it is new/used.</h4>
-            <button>View Products </button>
+            <Link to="/products/AllProduct"><button> View Products </button></Link>
           </div>
           <img className='ProductCatImg' src={Engineer} alt="Engineer" />
         </div>
@@ -60,7 +61,7 @@ const Home = () => {
           <div className="ProductCont">
             <h3>Pharmacy</h3>
             <h4>Buy or sell Pharmacy related educational product whether it is new/used.</h4>
-            <button>View Products </button>
+            <Link to="/products/PharmacyProduct"><button>View Products </button></Link> 
           </div>
           <img className='ProductCatImg' src={Pharmacy} alt="Engineer" />
         </div>
@@ -68,7 +69,7 @@ const Home = () => {
           <div className="ProductCont">
             <h3>Architecture</h3>
             <h4>Buy or sell Architecture related educational product whether it is new/used.</h4>
-            <button>View Products </button>
+            <Link to="/products/ArchitectureProduct"><button>View Products </button></Link> 
           </div>
           <img className='ProductCatImg' src={Architecture} alt="Engineer" />
         </div>
@@ -76,7 +77,7 @@ const Home = () => {
           <div className="ProductCont">
             <h3>Common Products</h3>
             <h4>Buy or sell all  stream related educational product whether it is new/used.</h4>
-            <button>View Products </button>
+            <Link to="/products/AllProduct"><button>View Products </button></Link>
           </div>
           <img className='ProductCatImg' src={Common} alt="Common" />
         </div>
