@@ -9,7 +9,7 @@ const ProductCard = ({name,phone,addres,productN,productP,productD,ProductImg,ha
         <img src={ProductImg} alt="ProductImg" />
         <div className="ProductSellerDetail">
             <h3>Product Name:-{productN}</h3>
-            <h3>Product Price:-{productP}</h3>
+            <h3>Product Price:-₹{productP}</h3>
             <h3>Product Desc:-{productD}</h3>
             <h3>Seller Name:-{name}</h3>
             <h3>Seller Phone no:-{phone}</h3>

@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ProductCard from "./ProductCard.jsx"
 import { useNavigate } from 'react-router-dom';
  const AllProduct = () => {
+  
   const Navigate =useNavigate();
   const {MartUserName} = useSelector(state=>state.Local);
   const {MartUserPhone} = useSelector(state=>state.Local);
@@ -43,8 +44,8 @@ import { useNavigate } from 'react-router-dom';
   };
   useEffect(() => {
     getdata();
-  }, [])
-  
+    document.title="ScolarMart | Product"
+   },[])
   return (
    <>
    {

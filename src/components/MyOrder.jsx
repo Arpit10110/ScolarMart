@@ -18,8 +18,8 @@ const MyOrder = () => {
   };
   useEffect(() => {
     getdata();
-  }, [])
-  
+    document.title="ScolarMart | MyOrder"
+   },[])
   return (
    <>
     {
@@ -27,10 +27,10 @@ const MyOrder = () => {
    <div className="AllProductMainDiv">
    {
     Orders.map((i,index)=>{
-      if(i.BuyerPhone=="MartUserPhone")
+      if(i.BuyerPhone==MartUserPhone)
       {
         return(
-         <OrderCard key={index} Buyername={i.BuyerName} SellerName={i.SellerName} Sellerphone={i.phone} productN={i.productN} productP={i.ProductPrice}  ProductImg={i.ProductImg} />
+         <OrderCard key={index} SellerName={i.SellerName} Sellerphone={i.SellerPhone} productN={i.ProductName} productP={i.ProductPrice}  ProductImg={i.ProductImg} />
         )
       }
     })

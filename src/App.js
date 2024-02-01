@@ -15,7 +15,7 @@ import Login from './components/Login.jsx'
 import Profile from './components/Profile.jsx'
 import OrderedS from './components/OrderedS'
 import MyOrder from './components/MyOrder.jsx'
-// import Footer from "./components/Footer"
+import Footer from "./components/Footer"
 //importing Style
 import"./style/Style.css"
 const App = () => {
@@ -38,7 +38,7 @@ const App = () => {
     <Route path='/Contact' element={<Contact/>} />
     <Route path='/Login' element={<Login/>} />
   </Routes>
-  {/* <Footer/> */}
+  <Footer/>
  </Router>
     )
 }

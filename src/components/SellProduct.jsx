@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { useState } from 'react'
 import "../style/SellerProduct.css"
 import {v4} from "uuid"
@@ -73,6 +73,9 @@ const SellProduct = () => {
       })
     })
   }
+  useEffect(() => {
+    document.title="ScolarMart | SellProduct"
+   },[])
   return (
    <>
    <div className="SellerWrapDiv">

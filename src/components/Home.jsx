@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import "../style/Home.css"
 import banner1 from "../assets/bg1.png"
 import banner2 from "../assets/bg2.jpg"
@@ -14,6 +14,9 @@ import ProductSectionImg from "../assets/ProductSectionImg.png"
 import {Carousel} from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 const Home = () => {
+  useEffect(() => {
+    document.title="ScolarMart | Home"
+   },[])
   return (
    <>
    <div className="main">
