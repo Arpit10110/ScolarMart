@@ -8,25 +8,33 @@ import { useState } from 'react';
 import {useSelector} from "react-redux"
 import {addDoc} from "firebase/firestore"
 import ProductCard from "./ProductCard.jsx"
+import { useNavigate } from 'react-router-dom';
 const ArchProduct = () => {
+  const Navigate =useNavigate(); 
   const {MartUserName} = useSelector(state=>state.Local);
   const {MartUserPhone} = useSelector(state=>state.Local);
+  const {MartLogin} = useSelector(state=>state.Local);
   const CreateCollection=collection(db,"Orders");
   const GetCollection = collection(db, "Productdetail");
   const [Buffer,setBuffer]=useState(true);
   const [Products,setProducts]=useState([])
   const BuyNow=(option)=>{
-    const MyOrder={
-      ProductImg:option.productImg,
-      ProductName:option.productName,
-      ProductPrice:option.productPrice,
-      SellerName:option.sellerName,
-      SellerPhone:option.sellerPhone,
-      BuyerName:MartUserName,
-      BuyerPhone:MartUserPhone,
+    if(MartLogin==0){
+      Navigate("/Login");
     }
-    console.log(MyOrder)
-    addDoc(CreateCollection,MyOrder);
+    else{
+      const MyOrder={
+        ProductImg:option.productImg,
+        ProductName:option.productName,
+        ProductPrice:option.productPrice,
+        SellerName:option.sellerName,
+        SellerPhone:option.sellerPhone,
+        BuyerName:MartUserName,
+        BuyerPhone:MartUserPhone,
+      }
+      console.log(MyOrder)
+      addDoc(CreateCollection,MyOrder);
+    }
   }
   const getdata = async () => {
     const data = await getDocs(GetCollection);

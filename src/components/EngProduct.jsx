@@ -8,9 +8,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import ProductCard from "./ProductCard.jsx"
 import {useSelector} from "react-redux"
 import {addDoc} from "firebase/firestore"
+import { useNavigate } from 'react-router-dom';
 const EngProduct = () => {
+  const Navigate =useNavigate(); 
   const {MartUserName} = useSelector(state=>state.Local);
   const {MartUserPhone} = useSelector(state=>state.Local);
+  const {MartLogin} = useSelector(state=>state.Local);
   const CreateCollection=collection(db,"Orders");
   const GetCollection = collection(db, "Productdetail");
   const [Buffer,setBuffer]=useState(true);
@@ -21,17 +24,21 @@ const EngProduct = () => {
     setBuffer(false)
   };
   const BuyNow=(option)=>{
-    const MyOrder={
-      ProductImg:option.productImg,
-      ProductName:option.productName,
-      ProductPrice:option.productPrice,
-      SellerName:option.sellerName,
-      SellerPhone:option.sellerPhone,
-      BuyerName:MartUserName,
-      BuyerPhone:MartUserPhone,
+    if(MartLogin==0){
+      Navigate("/Login");
     }
-    
-    addDoc(CreateCollection,MyOrder);
+    else{
+      const MyOrder={
+        ProductImg:option.productImg,
+        ProductName:option.productName,
+        ProductPrice:option.productPrice,
+        SellerName:option.sellerName,
+        SellerPhone:option.sellerPhone,
+        BuyerName:MartUserName,
+        BuyerPhone:MartUserPhone,
+      }
+      addDoc(CreateCollection,MyOrder);
+    }
   }
   useEffect(() => {
     getdata();

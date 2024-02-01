@@ -8,9 +8,8 @@ import {useSelector} from "react-redux"
 import 'react-toastify/dist/ReactToastify.css'; 
 import ProductCard from "./ProductCard.jsx"
 import { useNavigate } from 'react-router-dom';
- const AllProduct = () => {
-  
-  const Navigate =useNavigate();
+ const AllProduct = () => { 
+  const Navigate =useNavigate(); 
   const {MartUserName} = useSelector(state=>state.Local);
   const {MartUserPhone} = useSelector(state=>state.Local);
   const {MartLogin} = useSelector(state=>state.Local);
